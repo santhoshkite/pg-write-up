@@ -61,7 +61,7 @@ Shortly after, Responder catches an incoming NTLMv2 hash for the user `anirudh`:
 
 We crack the hash:
 ```bash
-hashcat -m 5600 ani.hash /usr/share/wordlists/rockyou.txt
+hashcat -m 5600 ani.hash `/usr/share/wordlists/rockyou.txt`
 # Password: SecureHM
 ```
 

@@ -37,7 +37,7 @@ Common Name:  blaze
 Noted. Let's move on to directory enumeration on port 80:
 
 ```bash
-gobuster dir -u http://192.168.203.10/ -w /usr/share/wordlists/dirb/common.txt -t 42 -b 404,403,400 -x php
+gobuster dir -u http://192.168.203.10/ -w `/usr/share/wordlists/dirb/common.txt` -t 42 -b 404,403,400 -x php
 ```
 
 This reveals a `/login.php` page — nice.

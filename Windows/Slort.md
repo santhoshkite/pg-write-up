@@ -29,7 +29,7 @@ nmap -sV -p- 192.168.171.53
 
 Scanning the web servers on `8080` and `4443` with `gobuster`:
 ```bash
-gobuster dir -u http://192.168.171.53:8080/ -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.171.53:8080/ -w `/usr/share/wordlists/dirb/common.txt`
 ```
 Both ports host identically structured web directories. In particular, we find a `/site` directory!
 ```text

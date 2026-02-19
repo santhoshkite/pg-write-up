@@ -52,7 +52,7 @@ The Windows server attempts to reach out and in doing so, provides its NTLMv2 ha
 
 We crack this using `hashcat`:
 ```bash
-hashcat -m 5600 enox.hash /usr/share/wordlists/rockyou.txt
+hashcat -m 5600 enox.hash `/usr/share/wordlists/rockyou.txt`
 # Yields: enox:california
 ```
 

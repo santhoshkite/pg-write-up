@@ -29,7 +29,7 @@ sudo nmap -sC -p- -n -Pn -sV --min-rate=9362 192.168.203.23 -oN nmap.txt
 The web server is running **CodoForum** (we can see "CODOLOGIC" in the title). Gobuster reveals an `/admin` panel:
 
 ```bash
-gobuster dir -u http://192.168.203.23/ -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.203.23/ -w `/usr/share/wordlists/dirb/common.txt`
 ```
 
 Key findings:

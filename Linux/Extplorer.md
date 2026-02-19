@@ -47,7 +47,7 @@ $GLOBALS["users"]=array(
 Crack dora's bcrypt hash with hashcat:
 
 ```bash
-hashcat -m 3200 dora.hash /usr/share/wordlists/rockyou.txt --force
+hashcat -m 3200 dora.hash `/usr/share/wordlists/rockyou.txt` --force
 # dora:doraemon
 ```
 
@@ -91,7 +91,7 @@ $6$AIWcIr8PEVxEWgv1$3mFpTQAc9Kzp4BGUQ2sPYYFE/dygqhDiv2Yw.XcU.Q8n1YO05.a/4.D/x4oj
 Crack it with hashcat:
 
 ```bash
-hashcat -m 1800 root.hash /usr/share/wordlists/rockyou.txt --force
+hashcat -m 1800 root.hash `/usr/share/wordlists/rockyou.txt` --force
 # root:explorer
 ```
 

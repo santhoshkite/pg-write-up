@@ -29,13 +29,13 @@ sudo nmap -sC -p- -n -Pn -sV --min-rate=9362 192.168.242.13 -oN nmap.txt
 Just SSH and a web server with a school management system. Gobuster reveals a `/management` directory:
 
 ```bash
-gobuster dir -u http://192.168.242.13/ -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.242.13/ -w `/usr/share/wordlists/dirb/common.txt`
 ```
 
 Deeper enumeration on `/management`:
 
 ```bash
-gobuster dir -u http://192.168.242.13/management -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.242.13/management -w `/usr/share/wordlists/dirb/common.txt`
 ```
 
 Key findings:

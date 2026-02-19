@@ -34,7 +34,7 @@ WebDAV is active. Traversing the file system via the web portal, we find `C:\xam
 
 Running `gobuster` on port **45443** (Apache):
 ```bash
-gobuster dir -u http://192.168.242.127:45443/ -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.242.127:45443/ -w `/usr/share/wordlists/dirb/common.txt`
 ```
 This reveals `/phpinfo.php`. Looking at `phpinfo`, we identify the web root as `C:\xampp\htdocs`.
 

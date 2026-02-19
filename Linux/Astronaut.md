@@ -31,7 +31,7 @@ Just SSH and a web server. Let's dig into port 80.
 Running gobuster against the site, we find a `/grav-admin/` directory:
 
 ```bash
-gobuster dir -u http://192.168.171.12/grav-admin/ -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.171.12/grav-admin/ -w `/usr/share/wordlists/dirb/common.txt`
 ```
 
 Interesting finds:

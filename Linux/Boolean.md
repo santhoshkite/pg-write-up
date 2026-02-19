@@ -32,7 +32,7 @@ Two web servers — port 80 has a web application and port 33017 has an Apache s
 
 **Port 80:**
 ```bash
-gobuster dir -u http://192.168.183.231/ -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.183.231/ -w `/usr/share/wordlists/dirb/common.txt`
 ```
 
 Key findings:
@@ -42,7 +42,7 @@ Key findings:
 
 **Port 33017:**
 ```bash
-gobuster dir -u http://192.168.183.231:33017/ -w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://192.168.183.231:33017/ -w `/usr/share/wordlists/dirb/common.txt`
 ```
 
 Key findings:

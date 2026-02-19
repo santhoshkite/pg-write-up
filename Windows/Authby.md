@@ -50,7 +50,7 @@ Looking around the `admin` FTP share, we discover a `.htpasswd` file.
 
 We grab the hash and crack it with `hashcat`:
 ```bash
-hashcat -m 1600 admin.hash /usr/share/wordlists/rockyou.txt --force
+hashcat -m 1600 admin.hash `/usr/share/wordlists/rockyou.txt` --force
 ```
 Result: **`elite`**
 
